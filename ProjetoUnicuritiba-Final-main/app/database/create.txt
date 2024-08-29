@@ -1,0 +1,9 @@
+create database faculproject;
+
+create table users (id int(3) AUTO_INCREMENT PRIMARY KEY, nome varchar(50), ra varchar(15), senha varchar(32), curso varchar(30), nivel varchar (6), atletica varchar(50), autorizado varchar(6));
+
+CREATE TABLE eventos (     id INT AUTO_INCREMENT PRIMARY KEY,     titulo VARCHAR(200),     descricao TEXT,     data_inicio_evento DATE,     data_fim_evento DATE,     hora_inicio_evento TIME,     hora_fim_evento TIME,     data_inicio_insc_event DATE,     data_fim_insc_event DATE,     hora_inicio_insc_event TIME,     hora_fim_insc_event TIME,     banner VARCHAR(300),     foto_1 VARCHAR(300),     foto_2 VARCHAR(300),     video VARCHAR(300),     tipo_evento VARCHAR(26),     endereco_evento VARCHAR(300),     manager_user_id INT,     nivel_user VARCHAR(26),     user_ra VARCHAR(50), liberado VARCHAR(8),     criado_em TIMESTAMP DEFAULT CURRENT_TIMESTAMP,     FOREIGN KEY (manager_user_id) REFERENCES users(id) );
+
+create table comodidades (id int(11), nome VARCHAR(100), descricao TEXT, banner VARCHAR(100));
+
+create table atleticas (id INT(11) PRIMARY KEY AUTO_INCREMENT, nome VARCHAR(100), sobre TEXT, presidente VARCHAR(100), ra_presidente VARCHAR(100), vice_presidente VARCHAR(100), ra_vice VARCHAR(100), logo VARCHAR(200) , id_manager int(11) ,liberado VARCHAR(10));

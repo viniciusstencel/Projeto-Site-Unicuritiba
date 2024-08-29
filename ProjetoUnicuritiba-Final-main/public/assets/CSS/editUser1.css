@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*COMPUTADORES*/
+@media only screen and (min-width: 1024px) {
+    .login-box1 {
+        position: absolute;
+        height: 750px;
+        top: 50%;
+        left: 50%;
+        width: 350px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: #5E17EB;
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+        border-radius: 10px;
+    }
+
+    .login-box1 h2 {
+        margin: 0 0 30px;
+        padding: 0;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+
+    .login-box1 .user-box {
+        position: relative;
+    }
+    
+    
+    .login-box1 .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #fff;
+        outline: none;
+        background: transparent;
+    }
+    
+
+
+    .login-box1 .user-box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: #fff;
+        pointer-events: none;
+        transition: .5s;
+    }
+    
+    .login-box1 .user-box input::placeholder {
+        color: white;
+        opacity: 0.5;
+    }
+    .login-box1 [name="sair"] {
+        position: relative;
+        display: inline-block;
+        padding: 10px 20px;
+        color: rgb(212, 212, 225);
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+        transition: .5s;
+        margin-top: 40px;
+        letter-spacing: 4px;
+        border-radius: 30px;
+    }
+    
+    .login-box1 [name="sair"]:hover {
+        background: #ffffff;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .cadastro{
+        text-decoration: none;
+        color: black;
+        padding-top: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        margin-left: 5px;
+    }
+
+    .extras{
+        position: absolute;
+        bottom: -450px;
+        right: -500px;
+        width: 1200px;
+        height: 1200px;
+        background-color: #5E17EB;
+        border-radius: 50%;
+        box-shadow: black;
+        z-index: -1;
+    }
+
+    .atualizar {
+        color: black;
+        background-color: transparent;
+        text-transform: uppercase;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        letter-spacing: 4px;
+        border-radius: 30px;
+        transition: 0.5s;
+        border-color: transparent;
+    }
+    
+    .atualizar:hover {
+        background: #ffffff;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        display: inline-block;
+        width: 100px;
+    }
+    .form-group input[type="radio"] {
+        margin-left: 10px;
+    }
+    .form-group div {
+        display: inline-block;
+    }
+}
+
+
+footer{
+    position: fixed; 
+        left: 0; 
+        bottom: 0; 
+        width: 100%; 
+        background: linear-gradient( to right,#bbb9b9, white);
+        color: rgb(0, 0, 0); 
+        padding: 10px; 
+        text-align: center; 
+}
+
+

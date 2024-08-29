@@ -1,0 +1,140 @@
+html {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #bbb9b9;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*QUADRADO*/
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+/*FORMULARIO*/
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+
+/*LINK*/
+.login-box form [name="cadastro"] {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(18, 18, 19);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box [name="cadastro"]:hover {
+    background: rgb(11, 11, 11);
+    color: #fef9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #595959,
+        0 0 25px #7b7a7b,
+        0 0 50px #ababac,
+        0 0 100px #f7f7f7;
+}
+
+.login-box form [name="login"] {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(18, 18, 19);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box [name="login"]:hover {
+    background: rgb(11, 11, 11);
+    color: #fef9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #595959,
+        0 0 25px #7b7a7b,
+        0 0 50px #ababac,
+        0 0 100px #f7f7f7;
+}
+
+.login-box [name="sair"] {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(212, 212, 225);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+}
+
+.login-box [name="sair"]:hover {
+    background: rgb(11, 11, 11);
+    color: #fef9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #595959,
+        0 0 25px #7b7a7b,
+        0 0 50px #ababac,
+        0 0 100px #f7f7f7;
+}

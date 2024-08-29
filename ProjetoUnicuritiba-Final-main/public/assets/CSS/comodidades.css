@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 'border-box';
+    font-family: 'Popping', sans-serif;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.2%;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height: 200px;
+    padding: 10px 0;
+}
+
+.logo{
+    padding-top: 10px;
+    width: 50%;
+}
+
+.menu{
+    padding-top: 20px;
+    width: 50%;
+    text-align: right;
+
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 15px;
+
+}
+
+.menu .link{
+    transition: 0.5s;
+}
+.menu .link:hover{
+    background: #4e14c4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.conta{
+    position: relative;
+    top: 15px;
+}
+
+.conta img{
+    transition: 0.5s;
+}
+.conta img:hover{
+    background: #4e14c4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.extras{
+    position: absolute;
+    bottom: -450px;
+    right: -500px;
+    width: 1200px;
+    height: 1200px;
+    background-color: #5E17EB;
+    border-radius: 50%;
+    box-shadow: black;
+    z-index: -1;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px;
+    margin-top: -10px; 
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #5E17EB;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border-color: transparent;
+}
+
+.button-container button:hover{
+    background: #4e14c4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button-container button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.login-box1 {
+    position: absolute;
+    height: 550px;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #5E17EB;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 10px;
+}
+
+.login-box1 h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+
+}
+.login-box1 .user-box {
+    position: relative;
+}
+
+.login-box1 .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+
+.login-box1 .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box1 .user-box input::placeholder {
+    color: white;
+    opacity: 0.5;
+}
+
+
+.login-box1 form [name="cadastro"] {
+    color: black;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 4px;
+    border-radius: 30px;
+    transition: 0.5s;
+    border-color: transparent;
+}
+
+.login-box1 [name="cadastro"]:hover {
+    background: #ffffff;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.login-box1 [name="sair"] {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(212, 212, 225);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    border-radius: 30px;
+}
+
+.login-box1 [name="sair"]:hover {
+    background: #ffffff;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.atualizar {
+    color: black;
+    background-color: transparent;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 4px;
+    border-radius: 30px;
+    transition: 0.5s;
+    border-color: transparent;
+}
+
+.atualizar:hover {
+    background: #ffffff;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cadastro{
+    margin-top: 20px;
+}
+
+.card-img-top{
+    height: 400px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-left: 34%;
+    border-radius: 70px;
+}
+.card-title{
+    background-color:#4e14c4;
+    width: auto;
+    height: 15px auto;
+    margin-left: 600px;
+    margin-right: 600px;
+    border-radius: 70px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 50%;
+    margin-top: 15px;
+
+
+}
+
+
+.button-container-top {
+display: flex;
+justify-content: center;
+gap: 20px; 
+padding: 20px;
+margin-top: -10px; 
+margin-left: 25px;
+}
+
+.button-container-top button {
+padding: 10px 20px;
+font-size: 16px;
+cursor: pointer;
+background-color: #5E17EB;
+color: white;
+border-radius: 5px;
+transition: background-color 0.3s;
+color: black;
+font-weight: bold;
+text-decoration: none;
+text-transform: uppercase;
+transition: 0.5s;
+border-color: transparent;
+}
+
+.button-container-top button:hover{
+background: #4e14c4;
+color: #fff;
+padding: 10px;
+border-radius: 5px;
+}
+
+.box{
+background-color: #4e14c4;
+border-color: black;
+border-radius: 30px;
+height: 400px;
+width: 400px;
+margin: 20px;
+}
+
+.box .card-img-top-1{
+height: 200px;
+width: 350px;
+margin: 25px;
+border-radius: 30px;
+}
+
+.box .card-title-1{
+align-items: center;
+justify-content: center;
+display: flex;
+background-color: white;
+border-radius: 20px;
+margin-top: 5px;
+margin: auto;
+width: 200px;
+padding: 5px;
+}
+
+.box .saiba-mais-1{
+justify-content: center;
+align-items: center;
+display: flex;
+margin-left: 150px;
+margin-top: 15px;
+color: white;
+border-color: transparent;
+padding: 10px;
+border-radius: 30px;
+background-color: transparent;
+cursor: pointer;
+text-transform: uppercase;
+transition: transform 0.5s, padding 0.5s, background-color 0.5s, border-radius 0.5s, color 0.5s;
+font-weight: bold;
+}
+
+.box .saiba-mais-1:hover {
+background-color: white;
+border-radius: 20px;
+padding: 15px 10px 15px 10px; 
+color: black;
+transform: scaleY(1.0); 
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+gap: 20px;
+justify-items: center;
+max-width: 100%; 
+margin: 0 auto; 
+padding: 20px; 
+box-sizing: border-box;
+}
+
+.card-img-top-2{
+height: 450px;
+width: 750px;
+margin-left: 59%;
+border-radius: 30px;
+}
+
+.box-size{
+justify-content: center;
+align-items: center;
+display: flex;
+height: auto;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-left: 20px;
+flex-direction: column;
+margin-top: -23%;
+margin-right: 50% ;
+background-color: #5E17EB;
+border-radius: 30px;
+}
+
+.box-size1{
+justify-content: center;
+align-items: center;
+display: flex;
+margin-right: 50%;
+background-color: #5E17EB;
+margin-top: 10px;
+padding: 10px;
+margin-left: 20px;
+border-radius: 30px;
+}
+
+.card-title-ver{
+text-transform: uppercase;
+}
+
+.voltar1{
+justify-content: center;
+align-items: center;
+display: flex;
+padding: 10px 20px;
+color: rgb(2, 3, 6);
+font-size: 16px;
+text-decoration: none;
+text-transform: uppercase;
+overflow: hidden;
+transition: .5s;
+letter-spacing: 4px;
+width: 25%;
+border-radius: 30px;
+margin: 15px auto;
+margin-top: 50px;
+margin-right: 61%;
+}
+
+.voltar1:hover {
+background: #4e14c4;
+color: #fff;
+padding: 10px;
+border-radius: 5px;
+
+}
+
+.nr {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 20px;
+    color: rgb(2, 3, 6);
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    border-radius: 30px;
+    margin: 10px auto;
+}
+
+.voltar {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 10px 20px;
+    color: rgb(2, 3, 6);
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    width: 25%;
+    border-radius: 30px;
+    margin: 15px auto;
+    margin-top: 50px;
+}
+
+.voltar:hover {
+    background: #4e14c4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}

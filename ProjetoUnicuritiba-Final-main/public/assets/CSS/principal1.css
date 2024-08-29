@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 'border-box';
+    font-family: 'Popping', sans-serif;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0.2%;
+}
+
+html, body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height: 200px;
+    padding: 10px 0;
+}
+
+.logo{
+    padding-top: 10px;
+    width: 50%;
+}
+
+.menu{
+    padding-top: 20px;
+    width: 50%;
+    text-align: right;
+
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 15px;
+
+}
+
+.menu .link{
+    transition: 0.5s;
+}
+.menu .link:hover{
+    background: #4e14c4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.conta{
+    position: relative;
+    top: 15px;
+}
+
+.conta img{
+    transition: 0.5s;
+}
+.conta img:hover{
+    background: #4e14c4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.extras{
+    position: absolute;
+    bottom: -450px;
+    right: -500px;
+    width: 1200px;
+    height: 1200px;
+    background-color: #5E17EB;
+    border-radius: 50%;
+    box-shadow: black;
+    z-index: -1;
+}
+
+section.funcoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+}
+.botao-container {
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    margin-top: -100px;
+    margin-right: 25%;
+    gap: 5px;
+    }
+    
+    button {
+    height: 350px;
+    width: 350px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #5E17EB;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: 0.5s;
+    }
+    
+    button img {
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+    }
+    button img
+    {
+    background: #4e14c4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    }
+    
+    button span {
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    }
+    
+    button
+    {
+    background: #4e14c4;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    }
+    
+    span a{
+    color: black;
+    text-decoration: none;
+    }
